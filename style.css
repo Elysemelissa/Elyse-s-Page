@@ -1,13 +1,14 @@
 /* Site styling */
 body {
-  background-color: #faf3f3;
+  background-color: #f5f4f4;
   line-height: 1.2em;
   font-family: "Noto Sans JP", sans-serif;
-  color: #000000;
+  color: #080808;
 }
 
 h2 {
   font-family: "Roboto Mono", sans-serif;
+  line-height: 1.2em;
 }
 
 h3 {
@@ -16,12 +17,13 @@ h3 {
   font-size: 18px;
   padding: 10px;
   font-family: "Noto Sans JP", sans-serif;
+  line-height: 1.5em;
 }
 
 p {
   padding: 15px 40px;
   text-align: left;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: lighter;
   font-family: "Open Sans", sans-serif;
 }
@@ -46,7 +48,7 @@ button {
   height: 38px;
   margin: 10px auto;
   font-size: 15px;
-  background-color: #da7f8f;
+  background-color: #8a9aa5;
   color: white;
   font-family: "Roboto Mono", sans-serif;
   border-style: none;
@@ -55,8 +57,14 @@ button {
 }
 
 button:hover {
-  background-color: #a2a0be;
+  background-color: #bea8a0;
   transition: all 200ms ease-in-out;
+  cursor: pointer;
+}
+
+.container {
+  width: 500px; /* This sets the width */
+  margin: 0 auto;
 }
 
 #logo {
@@ -67,9 +75,16 @@ button:hover {
   border-radius: 50%;
 }
 
+#logo-dutchie {
+  width: 150px;
+  padding: 1px 10 10px 0px;
+}
+
 .list-inline li {
   display: inline-block;
-  padding: 10px 20px;
+  font-size: 40px;
+  margin: 10px 30px;
+  color: #1b3749;
   list-style: none;
   padding-left: 0px;
 }
@@ -77,27 +92,27 @@ button:hover {
 .header-card,
 .about-card,
 .socials-card {
-  background-color: #f7f7f7;
-  padding: 30px 30px;
+  background-color: #ffffff;
+  padding: 30px;
   margin: 20px auto;
-  width: 50%;
   text-align: center;
   border-radius: 5px;
   box-shadow: 0px 10px 30px rgb(0 0 0 / 8%);
 }
 
 /* Typewriter for title */
-.typewriter {
+.typewriter h2 {
   overflow: hidden;
   font-size: 26px;
   font-family: "Roboto Mono", sans-serif;
-  color: #da7f8f;
+  color: #74818a;
+  width: fit-content;
   height: 45px;
+  margin: 0 auto;
   border-right: 0.14em solid #ffc7c7;
   white-space: nowrap;
-  margin: 15px auto;
   letter-spacing: 0.15em;
-  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+  animation: typing 3s steps(45, end), blink-caret 0.75s step-end infinite;
 }
 
 @keyframes typing {
@@ -115,7 +130,7 @@ button:hover {
     border-color: transparent;
   }
   50% {
-    border-color: #a7bbc7;
+    border-color: #5d676e;
   }
 }
 
