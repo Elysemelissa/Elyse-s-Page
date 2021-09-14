@@ -46,7 +46,7 @@ a:hover {
 button {
   width: 130px;
   height: 38px;
-  margin: 10px auto;
+  margin: 0 auto;
   font-size: 15px;
   background-color: #8a9aa5;
   color: white;
@@ -54,16 +54,17 @@ button {
   border-style: none;
   border-radius: 30px;
   box-shadow: 1px 1px rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
 }
 
 button:hover {
   background-color: #bea8a0;
-  transition: all 200ms ease-in-out;
   cursor: pointer;
 }
 
 .container {
-  width: 500px; /* This sets the width */
+  width: 50%;
+  /* This sets the width */
   margin: 0 auto;
 }
 
@@ -119,16 +120,19 @@ button:hover {
   from {
     width: 0;
   }
+
   to {
     width: 100%;
   }
 }
 
 @keyframes blink-caret {
+
   from,
   to {
     border-color: transparent;
   }
+
   50% {
     border-color: #5d676e;
   }
@@ -139,11 +143,13 @@ button:hover {
     width: 700px;
   }
 }
+
 @media (max-width: 720px) {
   .container {
     width: 500px;
   }
 }
+
 @media (max-width: 540px) {
   .container {
     width: 300px;
